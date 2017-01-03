@@ -1,13 +1,13 @@
 #count number of guesses in a binary search, provided an upper limit https://goo.gl/vB8w89
-
+print("Given a range of number, what's the min number of guesses to find a number in the rang using binary search? Try it out below, range starts from 0 to a number of your choice.")
 while True:
   try:
-    print("Given a range of number, what's the min number of guesses to find a number in the rang using binary search? Try it out below, range starts from 0 to a number of your choice.")
-    cap = int(input("Enter the upper limit: "))
+    cap = int(input("Enter an integer: "))
     print("You entered: %d" % int(cap))
     break
   except ValueError:
     print("You didn't enter an integer! Try again... ")
+
 guess = []
 def bi_guess(x):
   for i in range(0,int(x)):
