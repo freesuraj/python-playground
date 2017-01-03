@@ -1,0 +1,13 @@
+#count number of guesses in a binary search, provided an upper limit https://goo.gl/vB8w89
+cap = input("Enter the upper limit: ")
+print("You entered: %d" % int(cap))
+
+guess = []
+def bi_guess(x):
+  for i in range(0,int(x)):
+    if 2**i < x:
+      count = x / 2**i 
+      guess.append(count)
+  return("You will need at least %d guesses." % (len(guess)))
+  
+print(bi_guess(int(cap)))
